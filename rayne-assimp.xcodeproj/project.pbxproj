@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5A4CEF818A751FC00FECFD3 /* libassimp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E90F973B1871FD2400709C5F /* libassimp.a */; };
+		D5A4CEF918A751FE00FECFD3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AC38C7188AE78100051A67 /* libz.dylib */; };
+		E90F97031871FCF300709C5F /* RAMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F97021871FCF300709C5F /* RAMain.cpp */; };
+		E90F970B1871FD1800709C5F /* RAResourceLoaderAssimp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E90F97091871FD1800709C5F /* RAResourceLoaderAssimp.cpp */; };
+		E90F970C1871FD1800709C5F /* RAResourceLoaderAssimp.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F970A1871FD1800709C5F /* RAResourceLoaderAssimp.h */; };
+		E90F973C1871FD2400709C5F /* ai_assert.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97101871FD2400709C5F /* ai_assert.h */; };
+		E90F973D1871FD2400709C5F /* anim.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97111871FD2400709C5F /* anim.h */; };
+		E90F973E1871FD2400709C5F /* camera.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97121871FD2400709C5F /* camera.h */; };
+		E90F973F1871FD2400709C5F /* cexport.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97131871FD2400709C5F /* cexport.h */; };
+		E90F97401871FD2400709C5F /* cfileio.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97141871FD2400709C5F /* cfileio.h */; };
+		E90F97411871FD2400709C5F /* cimport.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97151871FD2400709C5F /* cimport.h */; };
+		E90F97421871FD2400709C5F /* color4.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97161871FD2400709C5F /* color4.h */; };
+		E90F97431871FD2400709C5F /* poppack1.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97191871FD2400709C5F /* poppack1.h */; };
+		E90F97441871FD2400709C5F /* pushpack1.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F971A1871FD2400709C5F /* pushpack1.h */; };
+		E90F97451871FD2400709C5F /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F971B1871FD2400709C5F /* config.h */; };
+		E90F97461871FD2400709C5F /* DefaultLogger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E90F971C1871FD2400709C5F /* DefaultLogger.hpp */; };
+		E90F97471871FD2400709C5F /* defs.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F971D1871FD2400709C5F /* defs.h */; };
+		E90F97481871FD2400709C5F /* Exporter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E90F971E1871FD2400709C5F /* Exporter.hpp */; };
+		E90F97491871FD2400709C5F /* Importer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E90F971F1871FD2400709C5F /* Importer.hpp */; };
+		E90F974A1871FD2400709C5F /* importerdesc.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97201871FD2400709C5F /* importerdesc.h */; };
+		E90F974B1871FD2400709C5F /* IOStream.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E90F97211871FD2400709C5F /* IOStream.hpp */; };
+		E90F974C1871FD2400709C5F /* IOSystem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E90F97221871FD2400709C5F /* IOSystem.hpp */; };
+		E90F974D1871FD2400709C5F /* light.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97231871FD2400709C5F /* light.h */; };
+		E90F974E1871FD2400709C5F /* Logger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E90F97241871FD2400709C5F /* Logger.hpp */; };
+		E90F974F1871FD2400709C5F /* LogStream.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E90F97251871FD2400709C5F /* LogStream.hpp */; };
+		E90F97501871FD2400709C5F /* material.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97261871FD2400709C5F /* material.h */; };
+		E90F97511871FD2400709C5F /* matrix3x3.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97281871FD2400709C5F /* matrix3x3.h */; };
+		E90F97521871FD2400709C5F /* matrix4x4.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F972A1871FD2400709C5F /* matrix4x4.h */; };
+		E90F97531871FD2400709C5F /* mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F972C1871FD2400709C5F /* mesh.h */; };
+		E90F97541871FD2400709C5F /* metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F972D1871FD2400709C5F /* metadata.h */; };
+		E90F97551871FD2400709C5F /* NullLogger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E90F972E1871FD2400709C5F /* NullLogger.hpp */; };
+		E90F97561871FD2400709C5F /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F972F1871FD2400709C5F /* postprocess.h */; };
+		E90F97571871FD2400709C5F /* ProgressHandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E90F97301871FD2400709C5F /* ProgressHandler.hpp */; };
+		E90F97581871FD2400709C5F /* quaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97311871FD2400709C5F /* quaternion.h */; };
+		E90F97591871FD2400709C5F /* scene.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97331871FD2400709C5F /* scene.h */; };
+		E90F975A1871FD2400709C5F /* texture.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97341871FD2400709C5F /* texture.h */; };
+		E90F975B1871FD2400709C5F /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97351871FD2400709C5F /* types.h */; };
+		E90F975C1871FD2400709C5F /* vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97361871FD2400709C5F /* vector2.h */; };
+		E90F975D1871FD2400709C5F /* vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F97381871FD2400709C5F /* vector3.h */; };
+		E90F975E1871FD2400709C5F /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = E90F973A1871FD2400709C5F /* version.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E90F96FE1871FCF300709C5F /* librayne-assimp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "librayne-assimp.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90F97021871FCF300709C5F /* RAMain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = RAMain.cpp; path = Classes/RAMain.cpp; sourceTree = "<group>"; };
+		E90F97091871FD1800709C5F /* RAResourceLoaderAssimp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RAResourceLoaderAssimp.cpp; path = Classes/RAResourceLoaderAssimp.cpp; sourceTree = "<group>"; };
+		E90F970A1871FD1800709C5F /* RAResourceLoaderAssimp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAResourceLoaderAssimp.h; path = Classes/RAResourceLoaderAssimp.h; sourceTree = "<group>"; };
+		E90F97101871FD2400709C5F /* ai_assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ai_assert.h; sourceTree = "<group>"; };
+		E90F97111871FD2400709C5F /* anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anim.h; sourceTree = "<group>"; };
+		E90F97121871FD2400709C5F /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		E90F97131871FD2400709C5F /* cexport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cexport.h; sourceTree = "<group>"; };
+		E90F97141871FD2400709C5F /* cfileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfileio.h; sourceTree = "<group>"; };
+		E90F97151871FD2400709C5F /* cimport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cimport.h; sourceTree = "<group>"; };
+		E90F97161871FD2400709C5F /* color4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color4.h; sourceTree = "<group>"; };
+		E90F97171871FD2400709C5F /* color4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color4.inl; sourceTree = "<group>"; };
+		E90F97191871FD2400709C5F /* poppack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poppack1.h; sourceTree = "<group>"; };
+		E90F971A1871FD2400709C5F /* pushpack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pushpack1.h; sourceTree = "<group>"; };
+		E90F971B1871FD2400709C5F /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		E90F971C1871FD2400709C5F /* DefaultLogger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DefaultLogger.hpp; sourceTree = "<group>"; };
+		E90F971D1871FD2400709C5F /* defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		E90F971E1871FD2400709C5F /* Exporter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exporter.hpp; sourceTree = "<group>"; };
+		E90F971F1871FD2400709C5F /* Importer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Importer.hpp; sourceTree = "<group>"; };
+		E90F97201871FD2400709C5F /* importerdesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = importerdesc.h; sourceTree = "<group>"; };
+		E90F97211871FD2400709C5F /* IOStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IOStream.hpp; sourceTree = "<group>"; };
+		E90F97221871FD2400709C5F /* IOSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IOSystem.hpp; sourceTree = "<group>"; };
+		E90F97231871FD2400709C5F /* light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = light.h; sourceTree = "<group>"; };
+		E90F97241871FD2400709C5F /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
+		E90F97251871FD2400709C5F /* LogStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LogStream.hpp; sourceTree = "<group>"; };
+		E90F97261871FD2400709C5F /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		E90F97271871FD2400709C5F /* material.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = material.inl; sourceTree = "<group>"; };
+		E90F97281871FD2400709C5F /* matrix3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix3x3.h; sourceTree = "<group>"; };
+		E90F97291871FD2400709C5F /* matrix3x3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix3x3.inl; sourceTree = "<group>"; };
+		E90F972A1871FD2400709C5F /* matrix4x4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix4x4.h; sourceTree = "<group>"; };
+		E90F972B1871FD2400709C5F /* matrix4x4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix4x4.inl; sourceTree = "<group>"; };
+		E90F972C1871FD2400709C5F /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		E90F972D1871FD2400709C5F /* metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metadata.h; sourceTree = "<group>"; };
+		E90F972E1871FD2400709C5F /* NullLogger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NullLogger.hpp; sourceTree = "<group>"; };
+		E90F972F1871FD2400709C5F /* postprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postprocess.h; sourceTree = "<group>"; };
+		E90F97301871FD2400709C5F /* ProgressHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProgressHandler.hpp; sourceTree = "<group>"; };
+		E90F97311871FD2400709C5F /* quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quaternion.h; sourceTree = "<group>"; };
+		E90F97321871FD2400709C5F /* quaternion.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion.inl; sourceTree = "<group>"; };
+		E90F97331871FD2400709C5F /* scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scene.h; sourceTree = "<group>"; };
+		E90F97341871FD2400709C5F /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		E90F97351871FD2400709C5F /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		E90F97361871FD2400709C5F /* vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector2.h; sourceTree = "<group>"; };
+		E90F97371871FD2400709C5F /* vector2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector2.inl; sourceTree = "<group>"; };
+		E90F97381871FD2400709C5F /* vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector3.h; sourceTree = "<group>"; };
+		E90F97391871FD2400709C5F /* vector3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector3.inl; sourceTree = "<group>"; };
+		E90F973A1871FD2400709C5F /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		E90F973B1871FD2400709C5F /* libassimp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libassimp.a; sourceTree = "<group>"; };
+		E9AC38C7188AE78100051A67 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E90F96FB1871FCF300709C5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A4CEF818A751FC00FECFD3 /* libassimp.a in Frameworks */,
+				D5A4CEF918A751FE00FECFD3 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E90F96F51871FCF300709C5F = {
+			isa = PBXGroup;
+			children = (
+				E90F97011871FCF300709C5F /* Classes */,
+				E90F970D1871FD2400709C5F /* Vendor */,
+				E90F96FF1871FCF300709C5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E90F96FF1871FCF300709C5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E90F96FE1871FCF300709C5F /* librayne-assimp.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E90F97011871FCF300709C5F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E90F97021871FCF300709C5F /* RAMain.cpp */,
+				E90F97091871FD1800709C5F /* RAResourceLoaderAssimp.cpp */,
+				E90F970A1871FD1800709C5F /* RAResourceLoaderAssimp.h */,
+			);
+			name = Classes;
+			path = "rayne-assimp";
+			sourceTree = "<group>";
+		};
+		E90F970D1871FD2400709C5F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				E90F970E1871FD2400709C5F /* include */,
+				E9AC38C7188AE78100051A67 /* libz.dylib */,
+				E90F973B1871FD2400709C5F /* libassimp.a */,
+			);
+			name = Vendor;
+			path = "rayne-assimp/Vendor";
+			sourceTree = "<group>";
+		};
+		E90F970E1871FD2400709C5F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E90F970F1871FD2400709C5F /* assimp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E90F970F1871FD2400709C5F /* assimp */ = {
+			isa = PBXGroup;
+			children = (
+				E90F97101871FD2400709C5F /* ai_assert.h */,
+				E90F97111871FD2400709C5F /* anim.h */,
+				E90F97121871FD2400709C5F /* camera.h */,
+				E90F97131871FD2400709C5F /* cexport.h */,
+				E90F97141871FD2400709C5F /* cfileio.h */,
+				E90F97151871FD2400709C5F /* cimport.h */,
+				E90F97161871FD2400709C5F /* color4.h */,
+				E90F97171871FD2400709C5F /* color4.inl */,
+				E90F97181871FD2400709C5F /* Compiler */,
+				E90F971B1871FD2400709C5F /* config.h */,
+				E90F971C1871FD2400709C5F /* DefaultLogger.hpp */,
+				E90F971D1871FD2400709C5F /* defs.h */,
+				E90F971E1871FD2400709C5F /* Exporter.hpp */,
+				E90F971F1871FD2400709C5F /* Importer.hpp */,
+				E90F97201871FD2400709C5F /* importerdesc.h */,
+				E90F97211871FD2400709C5F /* IOStream.hpp */,
+				E90F97221871FD2400709C5F /* IOSystem.hpp */,
+				E90F97231871FD2400709C5F /* light.h */,
+				E90F97241871FD2400709C5F /* Logger.hpp */,
+				E90F97251871FD2400709C5F /* LogStream.hpp */,
+				E90F97261871FD2400709C5F /* material.h */,
+				E90F97271871FD2400709C5F /* material.inl */,
+				E90F97281871FD2400709C5F /* matrix3x3.h */,
+				E90F97291871FD2400709C5F /* matrix3x3.inl */,
+				E90F972A1871FD2400709C5F /* matrix4x4.h */,
+				E90F972B1871FD2400709C5F /* matrix4x4.inl */,
+				E90F972C1871FD2400709C5F /* mesh.h */,
+				E90F972D1871FD2400709C5F /* metadata.h */,
+				E90F972E1871FD2400709C5F /* NullLogger.hpp */,
+				E90F972F1871FD2400709C5F /* postprocess.h */,
+				E90F97301871FD2400709C5F /* ProgressHandler.hpp */,
+				E90F97311871FD2400709C5F /* quaternion.h */,
+				E90F97321871FD2400709C5F /* quaternion.inl */,
+				E90F97331871FD2400709C5F /* scene.h */,
+				E90F97341871FD2400709C5F /* texture.h */,
+				E90F97351871FD2400709C5F /* types.h */,
+				E90F97361871FD2400709C5F /* vector2.h */,
+				E90F97371871FD2400709C5F /* vector2.inl */,
+				E90F97381871FD2400709C5F /* vector3.h */,
+				E90F97391871FD2400709C5F /* vector3.inl */,
+				E90F973A1871FD2400709C5F /* version.h */,
+			);
+			path = assimp;
+			sourceTree = "<group>";
+		};
+		E90F97181871FD2400709C5F /* Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				E90F97191871FD2400709C5F /* poppack1.h */,
+				E90F971A1871FD2400709C5F /* pushpack1.h */,
+			);
+			path = Compiler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E90F96FC1871FCF300709C5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90F97471871FD2400709C5F /* defs.h in Headers */,
+				E90F97501871FD2400709C5F /* material.h in Headers */,
+				E90F97401871FD2400709C5F /* cfileio.h in Headers */,
+				E90F97431871FD2400709C5F /* poppack1.h in Headers */,
+				E90F97421871FD2400709C5F /* color4.h in Headers */,
+				E90F973D1871FD2400709C5F /* anim.h in Headers */,
+				E90F97511871FD2400709C5F /* matrix3x3.h in Headers */,
+				E90F974A1871FD2400709C5F /* importerdesc.h in Headers */,
+				E90F97491871FD2400709C5F /* Importer.hpp in Headers */,
+				E90F97461871FD2400709C5F /* DefaultLogger.hpp in Headers */,
+				E90F973C1871FD2400709C5F /* ai_assert.h in Headers */,
+				E90F97591871FD2400709C5F /* scene.h in Headers */,
+				E90F97441871FD2400709C5F /* pushpack1.h in Headers */,
+				E90F975E1871FD2400709C5F /* version.h in Headers */,
+				E90F97561871FD2400709C5F /* postprocess.h in Headers */,
+				E90F973F1871FD2400709C5F /* cexport.h in Headers */,
+				E90F974F1871FD2400709C5F /* LogStream.hpp in Headers */,
+				E90F975A1871FD2400709C5F /* texture.h in Headers */,
+				E90F970C1871FD1800709C5F /* RAResourceLoaderAssimp.h in Headers */,
+				E90F97571871FD2400709C5F /* ProgressHandler.hpp in Headers */,
+				E90F97551871FD2400709C5F /* NullLogger.hpp in Headers */,
+				E90F97531871FD2400709C5F /* mesh.h in Headers */,
+				E90F97451871FD2400709C5F /* config.h in Headers */,
+				E90F974B1871FD2400709C5F /* IOStream.hpp in Headers */,
+				E90F97481871FD2400709C5F /* Exporter.hpp in Headers */,
+				E90F97541871FD2400709C5F /* metadata.h in Headers */,
+				E90F97411871FD2400709C5F /* cimport.h in Headers */,
+				E90F975C1871FD2400709C5F /* vector2.h in Headers */,
+				E90F97581871FD2400709C5F /* quaternion.h in Headers */,
+				E90F974E1871FD2400709C5F /* Logger.hpp in Headers */,
+				E90F973E1871FD2400709C5F /* camera.h in Headers */,
+				E90F974D1871FD2400709C5F /* light.h in Headers */,
+				E90F975B1871FD2400709C5F /* types.h in Headers */,
+				E90F975D1871FD2400709C5F /* vector3.h in Headers */,
+				E90F97521871FD2400709C5F /* matrix4x4.h in Headers */,
+				E90F974C1871FD2400709C5F /* IOSystem.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E90F96FD1871FCF300709C5F /* rayne-assimp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90F97061871FCF300709C5F /* Build configuration list for PBXNativeTarget "rayne-assimp" */;
+			buildPhases = (
+				E90F96FA1871FCF300709C5F /* Sources */,
+				E90F96FB1871FCF300709C5F /* Frameworks */,
+				E90F96FC1871FCF300709C5F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rayne-assimp";
+			productName = "rayne-assimp";
+			productReference = E90F96FE1871FCF300709C5F /* librayne-assimp.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E90F96F61871FCF300709C5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Überpixel";
+			};
+			buildConfigurationList = E90F96F91871FCF300709C5F /* Build configuration list for PBXProject "rayne-assimp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E90F96F51871FCF300709C5F;
+			productRefGroup = E90F96FF1871FCF300709C5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E90F96FD1871FCF300709C5F /* rayne-assimp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E90F96FA1871FCF300709C5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90F970B1871FD1800709C5F /* RAResourceLoaderAssimp.cpp in Sources */,
+				E90F97031871FCF300709C5F /* RAMain.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E90F97041871FCF300709C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E90F97051871FCF300709C5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E90F97071871FCF300709C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"RN_BUILD_MODULE=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/usr/local/include/rayne/\"",
+					"\"$(SRCROOT)/rayne-assimp/Vendor/include\"",
+				);
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib/,
+					"\"$(SRCROOT)/rayne-assimp/Vendor\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"$(OTHER_CFLAGS)",
+				);
+				OTHER_LDFLAGS = "-lRayne";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E90F97081871FCF300709C5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"NDEBUG=1",
+					"RN_BUILD_MODULE=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/usr/local/include/rayne/\"",
+					"\"$(SRCROOT)/rayne-assimp/Vendor/include\"",
+				);
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib/,
+					"\"$(SRCROOT)/rayne-assimp/Vendor\"",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"$(OTHER_CFLAGS)",
+				);
+				OTHER_LDFLAGS = "-lRayne";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E90F96F91871FCF300709C5F /* Build configuration list for PBXProject "rayne-assimp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90F97041871FCF300709C5F /* Debug */,
+				E90F97051871FCF300709C5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90F97061871FCF300709C5F /* Build configuration list for PBXNativeTarget "rayne-assimp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90F97071871FCF300709C5F /* Debug */,
+				E90F97081871FCF300709C5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E90F96F61871FCF300709C5F /* Project object */;
+}
