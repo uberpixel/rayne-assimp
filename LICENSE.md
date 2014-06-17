@@ -1,0 +1,1 @@
+rayne-assimp is released udner the MIT license, assimp is released under the 3-clause BSD license
